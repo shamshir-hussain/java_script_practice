@@ -13,7 +13,7 @@
 /// Arrays are Mutable:
 
 // let fruits = ["Mango", "Apple", "Litchi"];
-// // console.log(fruits); //"Mango", "Apple", "Litchi"
+// console.log(fruits); //"Mango", "Apple", "Litchi"
 // console.log((fruits[1] = "banana")); //changes to banana
 // console.log(fruits); //new values updated
 // console.log((fruits[10] = "pineapple")); //storing in more than its index value or length
@@ -47,3 +47,36 @@
 //   start.unshift("july"),
 //   start
 // ); //["july","june", "march", "august"];
+
+//array methods:
+//slice:Copies a portions of array:
+// let cars = ["Audi", "BMW", "Swift", "Toyota"];
+// console.log(cars.slice()); // it results whole array
+// console.log(cars.slice(2, 4)); //results from 2 to 3:['Swift','Toyota']
+// console.log(cars.slice(-2)); //length-num : 4-2 =>['Swift','Toyota']
+
+// indexOf: returns index of something
+
+// let primary = ["red", "yellow", "white", "black"];
+// console.log(primary.indexOf("yellow")); //1
+// console.log(primary.indexOf("black")); //3
+// console.log(primary.indexOf("Yellow")); //-1
+
+//includes:search for value . Returns value in form of boolean
+// let primary = ["red", "yellow", "white", "black"];
+// console.log(primary.includes("yellow")); //true
+// console.log(primary.includes("black")); //true
+// console.log(primary.includes("Yellow")); //false
+
+//concat:merge 2 arrays
+
+// let marks = [99, 100, 60, 90];
+// let marks1 = [99, 100, 60, 90];
+// let info = ["shamshir", "samatha", "sammu", "shammu"];
+// console.log(marks.concat(info)); //(8) [99, 100, 60, 90,'shamshir', 'samatha', 'sammu', 'shammu']
+// console.log(marks.concat(info, marks1)); //(12) [99, 100, 60, 90,'shamshir', 'samatha', 'sammu', 'shammu',99, 100, 60, 90]
+
+//reverse : reverse the sequence of array.In this original array will also modified.
+
+// let marks = [99, 100, 60, 90];
+// console.log(marks.reverse()); //[90,60,100,99]
