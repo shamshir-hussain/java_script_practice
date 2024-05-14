@@ -80,3 +80,91 @@
 
 // let marks = [99, 100, 60, 90];
 // console.log(marks.reverse()); //[90,60,100,99]
+
+//slice : copies portion of array
+
+// let primary = ["red", "yellow", "green", "white"];
+// console.log(primary.slice()); // (4)['red','yellow','green','white']
+// console.log(primary.slice(2)); //(2)['green','white']
+// console.log(primary.slice(-3)); //(3)['yellow','green','white']
+
+// splice: removes/replace/add elements
+// splice(start,deletecount,item0...itemN)
+
+// let places = ["hyderabad", "banglore", "ooty", "kerala"];
+
+// console.log(places.splice(3)); //['kerala']
+// console.log(places); //(3) ['hyderabad', 'banglore', 'ooty']
+// console.log(places.splice(0, 1)); //['hyderabad']
+// console.log(places); //(2) ['banglore'ooty']
+// console.log(places.splice(0, 1, "jammu", "delhi")); //['banglore']
+// console.log(places); //(3) ['jammu','delhi','ooty']
+// console.log(places.splice(1, 2, "goa", "chennai")); //['delhi','ooty']
+// console.log(places); //(3) ['jammu','goa','chennai']
+// console.log(places.splice(0, 0, "America", "Egypt")); //[]
+// console.log(places); //(5) ['America','Egypt','jammu','goa','chennai']
+// console.log(places.splice(1, 0, "china")); //[]
+// console.log(places); //(6) ['America','china','Egypt','jammu','goa','chennai']
+// console.log(places.splice(2, 1, "Bangladesh"));
+// // ['Egypt']
+// console.log(places); //(6)[("America", "china", "Bangladesh", "jammu", "goa", "chennai")];:replaced
+
+// sort : sorts an array from ascending to descending or viceversa. performed for strings.
+
+// let days = ["monday", "wednesday", "sunday", "tuesday"];
+// console.log(days.sort()); //(4) ['monday', 'sunday', 'tuesday', 'wednesday']
+
+// let squares = [25, 96, 36, 78, 56, 100];
+// console.log(squares.sort()); //(5) [100,25,36,56,78,96]
+
+//QS: For the given start state of an aray, change it to final form using splice:
+//start: ['january','july','march','august']
+//final: ['july','june','march','august']
+
+// let months = ["january", "july", "march", "august"];
+
+// console.log(months.splice(0, 1)); //['january']
+// console.log(months); //['july', 'march', 'august']
+// console.log(months.splice(1, 0, "june")); //[]
+// console.log(months); //(4) ['july', 'june', 'march', 'august']
+
+//or
+// console.log(months.splice(0, 2, "july", "june"), months); //['july', 'june'] , (4) ['july', 'june', 'march', 'august']
+
+//QS: Return the index of the "javascript" from the given array,if it was reversed.
+
+// ["c", "c++", "html", "javascript", "python", "java", "c#", "sql"];
+
+// let programs = [
+//   "c",
+//   "c++",
+//   "html",
+//   "javascript",
+//   "python",
+//   "java",
+//   "c#",
+//   "sql",
+// ];
+
+// console.log(programs.reverse(), programs.indexOf("javascript")); //["sql","c#","java","python","javascript","html","c++","c"],[4]
+// //or
+// console.log(programs.reverse().indexOf("javascript")); //4
+
+//Nested arrays: arrya in arrays
+
+// let nums = [
+//   [2, 4],
+//   [3, 6],
+//   [4, 8],
+// ];
+// console.log(nums); //(3) [Array(2), Array(2), Array(2)] // 0: (2) [2, 4] 1: (2) [3, 6] 2: (2) [4, 8] length:3 [[Prototype]]: Array(0)
+
+//QS: Create a nested array to show the following tic-tac-toe game state
+
+// let game = [
+//   ["x", null, "o"],
+//   [null, "x", null],
+//   ["o", null, "x"],
+// ];
+
+// console.log(game); //(3) [Array(3), Array(3), Array(3)]
