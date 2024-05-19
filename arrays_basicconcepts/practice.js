@@ -51,7 +51,7 @@
 // let arr = ["hello", 96, 10, "shamshir"];
 // let item = 6;
 
-// if (arr.indexOf(item) == 1 || arr.indexOf(item) != -1) {
+// if (arr.indexOf(item) != -1) {
 //   console.log("Element exists");
 // } else {
 //   console.log("Element does not exists");
