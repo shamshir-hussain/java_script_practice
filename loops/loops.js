@@ -205,3 +205,26 @@
 //     console.log(student[i][j]);
 //   }
 // }
+
+// for of loop
+
+// let fruits = ["mango", "orange", "apple", "litchi", "banana"];
+
+// for (fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// for (char of "shamshir") {
+//   console.log(char);
+// }
+
+// let heores = [
+//   ["ironman", "spiderman", "thor"],
+//   ["superman", "wonderwoman", "flash"],
+// ];
+
+// for (list of heores) {
+//   for (hero of list) {
+//     console.log(hero);
+//   }
+// }

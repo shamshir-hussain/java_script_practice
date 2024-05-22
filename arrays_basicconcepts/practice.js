@@ -65,3 +65,31 @@
 // } else {
 //   console.log("Element does not exist in the array.");
 // }
+
+//QS: write a js program to delete all occurances of element "num" in a given array. Ex: if arr = [1,2,2,3,4,5,6,3] & num = 2
+
+// let arr = [1, 2, 2, 3, 4, 5, 6, 3];
+// let num = 2;
+// // method: 1; in this we get wrong answer coz updating the increment miss the value once . using of splice the array is updated.
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] == num) {
+//     arr.splice(i, 1);
+//   }
+// }
+// console.log(arr); //(6) [1, 3, 4, 5, 6, 3]
+
+// method :2
+// console.log(arr.length);
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   if (arr[i] == num) {
+//     arr.splice(i, 1);
+//   }
+// }
+// console.log(arr);
+
+//method:3
+
+// while (arr.includes(num)) {
+//   arr.splice(arr.indexOf(num), 1);
+// }
+// console.log(arr);
