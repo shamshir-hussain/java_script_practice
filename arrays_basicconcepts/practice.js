@@ -93,3 +93,79 @@
 //   arr.splice(arr.indexOf(num), 1);
 // }
 // console.log(arr);
+
+//QS:. Write a JS program to find the sum of digits in a number. Example : if number = 287152, sum = 25
+
+// let number = 287152;
+// let str = number.toString();
+// let sum = 0;
+
+// for (i = 0; i < str.length; i++) {
+//   sum += parseInt(str[i]);
+// }
+// console.log(sum);
+
+// let num = 287152;
+// let sum = 0;
+
+// while (num > 0) {
+//   digit = num % 10;
+//   sum = sum + digit;
+//   num = Math.floor(num / 10);
+// }
+// console.log(sum);
+
+//QS:. Write a JS program to find the no of digits in a number. Example : if number = 287152, count = 6
+
+// let number = 287152;
+// let count = 0;
+
+// let copy = number;
+
+// while (copy > 0) {
+//   count++;
+//   copy = math.floor(copy / 10);
+// }
+// console.log(count);
+
+// let num = 287152;
+// let count = 0;
+
+// while (num > 0) {
+//   num = Math.floor(num / 10);
+// //   console.log(num);
+//   count++;
+// }
+// console.log(count);//6
+
+// let num = 287152;
+// let str = String(num);
+// let count = 0;
+
+// for (i = 0; i < str.length; i++) {
+//   count++;
+// //   console.log(str[i]);
+// }
+// console.log(count);//6
+
+//Qs4. Print the factorial of a number n.[Factorial of a number n is the product of all positive integers less than or equal to a given positive integer and denoted by that integer. ] Example : 7! (factorial of 7) = 1x2x3x4x5x6x7 = 5040 5! (factorial of 5) = 1x2x3x4x5 = 120 3! (factorial of 3) = 1x2x3 = 6 0! Is always 1
+
+// let n = 7;
+// let factorial = 1;
+
+// for (let i = 1; i <= n; i++) {
+//   factorial = factorial * i;
+// }
+// console.log(`factorial of ${n} is ${factorial}`);
+
+//QS:Find the largest number in an array with only positive numbers.
+
+// let array = [22, 36, 89, 74];
+// let largest = 0;
+
+// for (let i = 0; i <= array.length; i++) {
+//   if (largest < array[i]) {
+//     largest = array[i];
+//   }
+// }
+// console.log(largest);
