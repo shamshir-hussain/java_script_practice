@@ -241,7 +241,7 @@
 //     let avg = (a + b + c) / 3;
 //     console.log(avg);
 //   }
-  
+
 //   calcAvg(2, 4, 6); //4
 
 //create a function that prints the multiplication table of a number
@@ -252,7 +252,7 @@
 //       console.log(`${num}*${i}=${mul}`);
 //     }
 //   }
-  
+
 //   number(2);
 
 // function printTable(n) {
@@ -260,5 +260,27 @@
 //       console.log(i);
 //     }
 //   }
-  
+
 //   printTable(13);
+
+//Create a function that returns the sum of numbers from 1 to n
+
+// function getSum(n) {
+//     let sum = 0;
+//     for (let i = 0; i <= n; i++) {
+//       sum = sum + i;
+//     }
+//     return sum;
+//   }
+
+// create a function that returns the concatenation of all strings in an array.
+
+// let str = ["hi", "i", "am", "shamshir"];
+
+// function concate(str) {
+//   let result = "";
+//   for (let i = 0; i < str.length; i++) {
+//     result += str[i];
+//   }
+//   return result;
+// }
