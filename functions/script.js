@@ -104,3 +104,41 @@
 // }
 
 // printTable(13);
+
+//return
+
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// function isAdult(age) {
+//   if (age >= 18) {
+//     return "adult";
+//   } else {
+//     return "not adult";
+//   }
+//   console.log("hello!!"); //unrechable code
+// }
+
+// //Create a function that returns the sum of numbers from 1 to n
+
+// function getSum(n) {
+//   let sum = 0;
+//   for (let i = 0; i <= n; i++) {
+//     sum = sum + i;
+//   }
+//   return sum;
+// }
+
+// create a function that returns the concatenation of all strings in an array.
+
+// let str = ["hi", "i", "am", "shamshir"];
+
+// function concate(str) {
+//   let result = "";
+//   for (let i = 0; i < str.length; i++) {
+//     // result += str[i];
+//     result = result + " " + str[i];
+//   }
+//   return result.trim();
+// }
