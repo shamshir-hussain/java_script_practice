@@ -142,3 +142,74 @@
 //   }
 //   return result.trim();
 // }
+
+//scope
+
+//function scope
+
+// function calSum(a, b) {
+//   let sum = a + b; // function scope
+//   console.log(sum);
+// }
+
+// calSum(1, 2); //3
+
+// highest priority function scope
+// let sum = 54; //global scope
+
+// function calSum(a, b) {
+//   let sum = a + b; // function scope
+//   console.log(sum);
+// }
+
+// calSum(1, 2); //3
+
+// let sum = 54; //global scope
+
+// function calSum(a, b) {
+//   console.log(sum);
+// }
+
+// calSum(1, 2); //54
+
+//block scope
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i); //block scope //1,2,3,4,5
+// }
+// console.log(i); //error
+
+// let age = 23;
+// if (age >= 18) {
+//   let str = "adult";
+//   console.log(str);
+// }
+// console.log(str); //error
+
+//lexical scope
+
+// function outerFunc() {
+//   let x = 8;
+//   let y = 10;
+//   function innerFunc() {
+//     console.log(x);
+//     console.log(y);
+//   }
+//   innerFunc();
+// }
+
+//not possible:when we access varible outside the function
+
+// function outerFunc() {
+//   let x = 8;
+//   let y = 10;
+//   function innerFunc() {
+//     let str = "a";
+//     console.log(x);
+//     console.log(y);
+//     console.log(str); //psbl if inside
+//   }
+//   innerFunc();
+//   console.log(str); //error
+// }
+// outerFunc(); //8,10
