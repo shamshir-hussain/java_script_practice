@@ -213,3 +213,221 @@
 //   console.log(str); //error
 // }
 // outerFunc(); //8,10
+
+//QS: what will be the output
+
+// let greet = "hello";//global scope
+
+// function changeGreet() {
+//   let greet = "namaste";//function scope
+//   console.log(greet);
+//   function innerGreet() { //lexical scope
+//     console.log(greet);
+//   }
+// }
+
+// console.log(greet); //hello
+// changeGreet(); //namaste
+
+//function expressions: it is name less function
+
+// let sum = function (a, b) {
+//   return a + b;
+// };
+
+// sum = function () {
+//   return "hello";
+// };
+
+//higher order functions
+
+// function multipleGreet(func, count) {
+//   for (let i = 1; i <= count; i++) {
+//     func();
+//   }
+// }
+
+// let greet = function () {
+//   console.log("hello");
+// };
+
+// multipleGreet(greet, 10); //10 hello
+// //or
+// multipleGreet(
+//   (gt = function () {
+//     console.log("hii");
+//   }),
+//   10
+// ); //10 hii
+
+// function oddEvenTest(request) {
+//   if (request == "odd") {
+//     return function (n) {
+//       console.log(!(n % 2 == 0));
+//     };
+//   } else if (request == "even") {
+//     return function (n) {
+//       console.log(n % 2 == 0);
+//     };
+//   } else {
+//     console.log("Wrong request");
+//   }
+// }
+
+//To test odd
+// let oddTest = oddEvenTest("odd");
+// oddTest(1); //true
+// oddTest(2); //false
+
+// //To test even
+// let evenTest = oddEvenTest("even");
+// evenTest(2); //true
+// evenTest(1); //false
+
+//To test wrong request
+// oddEvenTest("wrong"); //wrong request
+
+//To find by giving parameters
+// function oddEvenTest(request, n) {
+//   if (request == "odd") {
+//     console.log(!(n % 2 == 0));
+//   } else if (request == "even") {
+//     console.log(n % 2 == 0);
+//   } else {
+//     console.log("Wrong request");
+//   }
+// }
+
+// oddEvenTest("odd", 7); // Output: true
+// oddEvenTest("even", 8); // Output: true
+
+// const calculator = {
+//   add: function (a, b) {
+//     return a + b;
+//   },
+//   sub: function (a, b) {
+//     return a - b;
+//   },
+//   mul: function (a, b) {
+//     return a * b;
+//   },
+// };
+
+// calculator.add(5,3) //8
+
+//shorthand
+// const calculators = {
+//   add(a, b) {
+//     return a + b;
+//   },
+//   sub(a, b) {
+//     return a - b;
+//   },
+//   mul(a, b) {
+//     return a * b;
+//   },
+// };
+
+// calculators.sub(5, 3); //2
+
+//QS:Write a JavaScript function that returns array elements larger than a number.
+
+// let arr = [8, 9, 11, 6, 10, 1, 3, 2];
+// let num = 5;
+
+// function getElements(arr, num) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > num) {
+//       console.log(arr[i]);
+//     }
+//   }
+// }
+
+// getElements(arr, num);
+
+//QS: Write a JavaScript function to extract unique characters from a string.Example: str = “abcdabcdefgggh” ans = “abcdefgh”
+
+// let str = "abcdabcdefgggh";
+
+// function getUnique(str) {
+//   let ans = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     if (ans.indexOf(char) == -1) {
+//       ans = ans + char;o
+//     }
+//   }
+//   return ans;
+// }
+
+// console.log(getUnique(str)); //abcdefgh
+
+//QS:Write a JavaScript function that accepts a list of country names as input and returns the longest country name as output. Example : country = ["Australia", "Germany", "United States of America"] output :"United States of America"
+
+// let country = ["Australia", "Germany", "United States of America"];
+
+// function longestCountry(country) {
+//   let ansIdx = 0;
+//   for (let i = 0; i < country.length; i++) {
+//     let ansLen = country[ansIdx].length;
+//     let currLen = country[i].length;
+//     if (currLen > ansLen) {
+//       ansIdx = country[i];
+//     }
+//   }
+//   return ansIdx;
+// }
+
+// console.log(longestCountry(country)); //United States of America
+
+//QS: Write a JavaScript function to count the number of vowels in a String argument.
+
+// let str = "shamshirhussain";
+
+// function vowel(str) {
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (
+//       str.charAt(i) == "a" ||
+//       str.charAt(i) == "e" ||
+//       str.charAt(i) == "i" ||
+//       str.charAt(i) == "o" ||
+//       str.charAt(i) == "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(vowel(str));//5
+
+// let str = "shamshirhussain";
+
+// function vowel(str) {
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (
+//       str[i] == "a" ||
+//       str[i] == "e" ||
+//       str[i] == "i" ||
+//       str[i] == "o" ||
+//       str[i] == "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(vowel(str));//5
+
+//QS:Write a JavaScript function to generate a random number within a range (start, end).
+
+// let start = 100;
+// let end = 200;
+
+// function randomNumber(start, end) {
+//   let num = Math.floor(Math.random() * (end - start + 1)) + start;
+//   return num;
+// }
+
+// console.log(randomNumber(start, end));
