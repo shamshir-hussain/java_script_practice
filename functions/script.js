@@ -354,7 +354,7 @@
 //   for (let i = 0; i < str.length; i++) {
 //     let char = str[i];
 //     if (ans.indexOf(char) == -1) {
-//       ans = ans + char;o
+//       ans = ans + char;
 //     }
 //   }
 //   return ans;
