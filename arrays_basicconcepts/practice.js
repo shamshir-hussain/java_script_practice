@@ -401,3 +401,83 @@
 // }
 
 // console.log(randomNumber(start, end));
+
+//arrow function that returns square of number
+
+// let square = (n) => {
+//   return n ** 2;
+// };
+
+//write function that prints "hello world" 5times at intervals of 2s
+
+// let id = setInterval(() => {
+//   console.log("Hello World");
+// }, 2000);
+
+// setTimeout(() => {
+//   clearInterval(id);
+// }, 10000);
+
+//QS: Write an arrow function named arrayAverage that aacepts an array of numbers and returns the average of those numbers
+
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// arrayAverage = (arr) => {
+//   let total = 0;
+
+//   for (let number of arr) {
+//     total += number;
+//   }
+//   return total / arr.length;
+// };
+
+// console.log(arrayAverage(arr)); //3.5
+
+//QS:Write an arrow function named isEven() that takes a single number as argument and return if it is even or not.
+
+// let n = 2;
+
+// let isEven = (n) => {
+//   if (n % 2 == 0) {
+//     return `${n} is even`;
+//   } else {
+//     return `${n} is odd`;
+//   }
+// };
+
+// console.log(isEven(n));
+
+// //method :2
+// const evenIs = (n) => n % 2 == 0;
+
+// console.log(evenIs(n));
+
+//QS:3 what is the output of the following code:
+
+// const object = {
+//   meesage: "Hello, World!",
+
+//   logMessage() {
+//     console.log(this.message);
+//   },
+// };
+
+// setTimeout(object.logMessage, 1000); //undefined coz we are calling setTimeout, actually it is not defined, it acts as global so as per this it executes "window object" in other way of "undefined"
+
+//QS: what is the output of following code:
+
+// let length = 4;
+// function callback() {
+//   console.log(this.length);
+// }
+
+// const object = {
+//   length: 5,
+//   method(callback) {
+//     callback();
+//   },
+// };
+
+// object.method(callback, 1, 2);
+
+//above code wont work coz of errors in calling and accessing
