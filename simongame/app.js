@@ -9,7 +9,7 @@ let h2 = document.querySelector("h2");
 document.addEventListener("keypress", function () {
   if (started == false) {
     started = true;
-    console.log("Game Started");
+    // console.log("Game Started");
     levelup();
   }
 });
@@ -35,7 +35,7 @@ function levelup() {
   // console.log(randBtn);
   btnFlash(randBtn);
   gameSeq.push(randColor);
-  console.log(gameSeq);
+  // console.log(gameSeq);
 }
 
 function checkAns(idx) {
@@ -62,7 +62,7 @@ function btnPress() {
   btnFlash(btn);
 
   userColor = btn.getAttribute("id");
-  console.log(userColor);
+  // console.log(userColor);
   userSeq.push(userColor);
 
   checkAns(userSeq.length - 1);
